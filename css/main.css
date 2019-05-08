@@ -1,0 +1,65 @@
+html{
+  background: linear-gradient(#1824bf, #43cea2);
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(auto, 1080px) minmax(1em, 1fr);
+  min-height: 100vh;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  transition: opacity 2s ease-in;
+}
+
+h1{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.6em;
+}
+
+h2{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+h3{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+p{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background: white;
+  grid-column: 2 / span 1;
+
+  padding: 1em 3em;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img{
+  height: 5em;
+  width: auto;
+}
+
+.landing{
+  height: 70vh;
+  display: table;
+}
+
+.landing h1{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.lowerweight{
+  font-weight: 400;
+}
