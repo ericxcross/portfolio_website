@@ -6,53 +6,97 @@ html{
   padding-top: 1em;
   padding-bottom: 1em;
   transition: opacity 2s ease-in;
+  scroll-behavior: smooth;
 }
 
 h1{
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
   font-size: 2.6em;
+  margin:0.2em 0;
 }
 
 h2{
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
+  margin: 0;
 }
 
 h3{
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
+  font-size: 0.9em;
+  margin: 0;
 }
 
-p{
+p, li{
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
+  font-size: 0.9em;
+  margin: 0;
+  padding-bottom: 1.2em;
+}
+
+li{
+  padding-left: 0;
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 0;
 }
 
 body{
   margin:0;
   padding:0;
   background: white;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
   grid-column: 2 / span 1;
-
   padding: 1em 3em;
 }
 
-header{
+.container {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
+}
+
+.container div{
+  width: 50%;
+  margin: 1em;
+}
+
+.flex{
+  margin: -1em;
+}
+
+#projects{
+  min-height: 100vh;
+}
+
+#about{
+  min-height: 100vh;
+}
+
+header{
+  margin-top: 1em;
   align-items: center;
 }
 
 header img{
-  height: 5em;
+  height: 6em;
   width: auto;
+}
+
+footer{
+  margin-top: 2em;
 }
 
 .landing{
   height: 70vh;
   display: table;
+  margin-bottom: 20vh;
 }
 
 .landing h1{
@@ -62,4 +106,48 @@ header img{
 
 .lowerweight{
   font-weight: 400;
+}
+
+.bio {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#copyright{
+  margin: 0;
+  margin-top: 5em;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.bullet {
+  position: relative;
+  margin: 0.2em 0;
+  width: 1.3em;
+  margin-left: -2em;
+  margin-right: 0.4em;
+}
+.title{
+  display: inline-block;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container div{
+    width: 100%;
+  }
 }
