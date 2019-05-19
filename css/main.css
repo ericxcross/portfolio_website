@@ -1,10 +1,7 @@
 html{
   background: linear-gradient(#1824bf, #43cea2);
-  display: grid;
-  grid-template-columns: minmax(1em, 1fr) minmax(auto, 1080px) minmax(1em, 1fr);
+  padding: 0.5em;
   min-height: 100vh;
-  padding-top: 1em;
-  padding-bottom: 1em;
   transition: opacity 2s ease-in;
   scroll-behavior: smooth;
 }
@@ -12,29 +9,32 @@ html{
 h1{
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
-  font-size: 2.6em;
-  margin:0.2em 0;
+  font-size: 2.8em;
 }
 
 h2{
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
-  margin: 0;
 }
 
 h3{
   font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.9em;
-  margin: 0;
+  font-size: 1em;
+  margin: 0.5em 0;
 }
 
-p, li{
+p, li, figcaption{
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
-  font-size: 0.9em;
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+
+figure{
   margin: 0;
-  padding-bottom: 1.2em;
+  padding: 0;
 }
 
 li{
@@ -42,107 +42,122 @@ li{
 }
 
 ul{
-  list-style-type: none;
-  padding-left: 0;
+}
+
+.jslink, a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 0.1em solid #1824bf;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.jslink:hover, a:hover {
+  border-bottom: 0.2em solid #1824bf;
+}
+
+.not-bold{
+  font-weight: 400;
+  text-transform: none;
 }
 
 body{
-  margin:0;
-  padding:0;
+  display: grid;
+  grid-template-columns: minmax(3em, 1fr) minmax(auto, 1080px) minmax(3em, 1fr);
   background: white;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
-  grid-column: 2 / span 1;
-  padding: 1em 3em;
 }
 
-.container {
+header{
+  grid-column: 2 / span 1;
+  min-height: 90vh;
+  padding: 3em 0;
+}
+
+.split {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-}
-
-.container div{
-  width: 50%;
-  margin: 1em;
-}
-
-.flex{
-  margin: -1em;
-}
-
-#projects{
-  min-height: 100vh;
-}
-
-#about{
-  min-height: 100vh;
-}
-
-header{
-  margin-top: 1em;
   align-items: center;
 }
 
-header img{
-  height: 6em;
+.split img{
+  height: 4em;
   width: auto;
+  padding-right: 2em;
 }
 
-footer{
-  margin-top: 2em;
+#navbar{
+  text-align: right;
 }
 
-.landing{
-  height: 70vh;
-  display: table;
-  margin-bottom: 20vh;
+.header-text{
+  margin-top: 25vh;
 }
 
-.landing h1{
-  display: table-cell;
-  vertical-align: middle;
+.intext{
+  width: 0.6em;
+  padding-right: 0.3em;
+  display: inline;
 }
 
-.lowerweight{
-  font-weight: 400;
+.block{
+  grid-column: 2 / span 1;
+}
+.container {
+  object-fit: contain;
+  display: grid;
+  grid-template-columns: 3fr 1em 2fr;
+  margin: 2em 0;
+  align-items: center;
 }
 
-.bio {
-  margin-top: 1em;
-  margin-bottom: 1em;
+.caption{
+  margin-top: 0;
+}
+
+.left{
+  margin: 2em 0;
+  grid-column: 1/ span 1;
+}
+
+.right{
+  margin: 2em 0;
+  grid-column: 3/ span 1;
+}
+
+.full-span{
+  margin: 2em 0;
+  grid-column: 1/span 3;
+  width: 100%;
+}
+
+.full-height{
+  min-height: 100vh;
+}
+
+.project-img{
+  margin: 1em 0;
+  width: 100%;
+}
+
+.project-img-halfwidth{
+  width: 70%;
 }
 
 #copyright{
-  margin: 0;
-  margin-top: 5em;
+  grid-column: 1/span 3;
+  margin: 4em;
   font-size: 0.7em;
   text-align: center;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: opacity 0.3s ease-in-out;
+#portrait{
+  width: 100%;
 }
 
-a:hover {
-  opacity: 0.7;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.bullet {
-  position: relative;
-  margin: 0.2em 0;
-  width: 1.3em;
-  margin-left: -2em;
-  margin-right: 0.4em;
-}
-.title{
-  display: inline-block;
-}
-
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
   .container {
     flex-wrap: wrap;
   }
@@ -150,4 +165,4 @@ a:hover {
   .container div{
     width: 100%;
   }
-}
+} */

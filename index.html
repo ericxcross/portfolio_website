@@ -5,77 +5,224 @@
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <script src="js/app.js"></script>
     <title>Eric Cross / Portfolio</title>
   </head>
 
   <body>
 
-    <header class="container">
-      <a href="index.html"><img src="images/xicon.png" alt="x marks the spot"></a>
-      <a href="#about"><h1>Eric Cross</h1></a>
+    <header>
+
+      <div class="split">
+        <img src="images/xicon.png" alt="x marks the spot">
+        <h3 id="navbar" class="not-bold"><a href="mailto: eric.cross@sympatico.ca">Email</a> / <a href="https://www.linkedin.com/in/ericxcross/">LinkedIn</a> / <a href="https://www.instagram.com/ericxcross/?hl=en">Instagram</a> / <a href="https://github.com/ericxcross">GitHub</a></h3>
+      </div>
+
+      <div class="header-text">
+        <h1>I'm Eric,<span class="not-bold"> a product designer and CodeClan student based in Edinburgh, UK.</span><h3></h1>
+        <h3 id="readmore"><img class="intext" src="images/xicon.png" alt="x marks the spot"><span class="jslink">READ MORE</span></h3>
+
+        <div id="aboutme">
+          <h1 class="not-bold">I'm currently studying in a 16 week software development course at <a href="https://codeclan.com/">CodeClan</a> to gain insight into the software development process as it applies to UX design.</h1>
+          <h1 class="not-bold">I had a previous life as an industrial designer where I designed ergonomic furniture with <a href="http://www.ito-design.com/">ITO Design</a> in Switzerland, imagined future retail experiences at <a href="http://blueskydesigngroup.com.au/">Blue Sky Design Group</a> in Sydney and freelanced across multiple companies, countries and time-zones.</h1>
+          <h1>Looking for new opportunities in UX design.</h1>
+          <div class="container">
+            <div class="left">
+              <img id="portrait" src="images/portrait.jpg" alt="eric's portrait">
+              <h3 id="readless"><img class="intext" src="images/xicon.png" alt="x marks the spot"><span class="jslink">READ LESS</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </header>
 
-    <div class="landing">
-      <h1 class="lowerweight">Current Codeclan student based in Edinburgh / Now seeking new opportunities in UX design.</h1>
-    </div>
+    <div class="block project">
+      <div class="container">
 
-    <div id="projects">
-      <a href="#">
-        <img class="bullet" src="images/xicon.png" alt="x marks the spot">
-        <h1 class="title">Carbon Impact Calculator</h1>
-        <p><strong>CodeClan</strong> / TreeTrip is an app to help people visualise the impacts of their travel on the environment. The project was undertaken in collaboration with fellow codeclan students Miriam Boran and Alasdair Carstairs. </p>
-      </a>
-    </div>
+        <div class="full-span">
+          <h1 class="project-title">Getwork<span class="not-bold"> is a tool for job seekers to keep track of their leads and stay on top of their application process.</h1>
+          <h3><img class="intext" src="images/xicon.png" alt="x marks the spot"><a href="">Check out the code on Github</a></h3>
+        </div>
 
-    <div id="about">
-      <img class="bullet" src="images/xicon.png" alt="x marks the spot">
-      <h1 class="title">About Me</h1>
-      <p class="bio">Current Codeclan student / Raised in Canada / Living in Edinburgh / Passionate hiker, runner, kayaker, explorer / Previous life as an industrial designer / Now seeking new opportunities in user experience design.</p>
-      <div class="container flex">
-        <div>
-          <h3>Professional Experience</h3>
+        <img class="full-span project-img" src="images/getwork/getwork-01.png" alt="getwork app with laptop">
+
+        <div class="left">
+          <h2>Individual Project at Codeclan</h2>
+          <p><strong>Role:</strong> Product Designer and Ruby Developer</p>
+          <p><strong>Brief:</strong> Create a full-stack ruby app in a one week sprint.</p>
+          <p><strong>Technologies:</strong> Vanilla Ruby, PostgreSQL, Sinatra, HTML and CSS</p>
+          <p><strong>Timeline:</strong> April 2019</p>
+
+        </div>
+
+        <h1 class="full-span not-bold">I wanted to create a tool that could be used by fellow Codeclan students to help them during their job search.</h1>
+
+        <figure class="full-span">
+          <img class="project-img" src="images/getwork/getwork-03.png" alt="google survey results">
+          <figcaption class="caption">Google survey results: 2 / 12 questions that were asked to respondants</figcaption>
+        </figure>
+
+        <div class="left">
+          <h2>Research Findings</h2>
+          <p>In order to better understand my user base, I conducted a short google survey. It helped to answer a few of my questions about people’s job seeking habits</p>
           <ul>
-            <li>Freelance Designer<br>Self-Employed / Currently Edinburgh, UK<br>Feb 15-Ongoing</li>
-            <li>Product Designer<br><a href="http://www.ito-design.com/">ITO Design</a> / Cham, Switzerland<br>June 16-Sept 18</li>
-            <li>Product Design Intern<br><a href="https://www.otilumionics.com/">OTI Lumionics</a> / Toronto, Canada<br>May 15-Aug 15</li>
-            <li>Experience Design Intern<br><a href="http://blueskydesigngroup.com.au/">Blue Sky Design Group</a> / Sydney, Australia<br>June 14-Dec 14</li>
+            <li>26% of respondants appled for upwards of 15+ jobs during their last job search</li>
+            <li>More than half of respondants use digital tools to track their job search; however, only 5% schedule their meetings and follow ups in a calendar.</li>
+            <li>The majority of respondants did not feel that their current methods helped them feel organized.</li>
+          </ul>
+          <p><strong>To help my job seeking process, I need...</strong></p>
+          <ul>
+            <li>‘analytics on successes and failures’</li>
+            <li>‘automatically generated cover letters because I hate writing them’</li>
+            <li>‘suggestions of jobs that are relevant to me’</li>
+            <li>‘motivational reminders to not procrastinate’</li>
+            <li>‘to start keeping everything in one place’</li>
           </ul>
         </div>
-        <div>
-          <h3>Education</h3>
+
+        <figure class="full-span">
+          <img class="project-img" src="images/getwork/getwork-04.png" alt="getwork app with laptop">
+          <figcaption class="caption">Protopersonas and user journeys helped give context to the survey data</figcaption>
+        </figure>
+
+        <figure class="full-span">
+          <img class="project-img" src="images/getwork/getwork-05.png" alt="wireframes and planning sketches">
+          <figcaption class="caption">Planning sketches: wireframes of the different app views and class diagrams detailing the datatypes</figcaption>
+        </figure>
+
+        <div class="left">
+          <h2>UX Challenges</h2>
+          <p>Technology was a challenging constraint while designing the user experience of the application. The brief required a functioning prototype developed using only using only Vanilla Ruby; planning an app without Javascript meant that new information has to be restricted to new page loads.</p>
+        </div>
+
+        <figure class="full-span">
+          <img class="project-img" src="images/getwork/getwork-06.png" alt="user flow diagram">
+          <figcaption class="caption">User flow diagram details required new page loads with white boxes</figcaption>
+        </figure>
+
+        <div class="left">
+          <h2>UX Solutions</h2>
+          <p>Two primary views were developed where most of the necessary information could be found and edited, which helped to keep page loads to a minimum.</p>
           <ul>
-            <li>SQA Level 8 in Software Development<br><a href="https://codeclan.com/">CodeClan</a> / Edinburgh, UK<br>Feb 19-Ongoing</li>
-            <li>Bachelors of Industrial Design<br><a href="https://carleton.ca/id/bid/">Carleton University</a> / Ottawa, Canada<br>Sept 11-June 16</li>
-            <li>Academic Exchange<br><a href="https://www.monash.edu/study/courses/majors-minors-specialisations/2019/specialisations/industrial-design-xs0128">Monash University</a> / Melbourne, Australia<br>Feb 14-June 14</li>
-          </ul>
-          <h3>Awards</h3>
-          <ul>
-            <li>Red Dot Design / Qua Chair / ITO Design<br>Sept 2019</li>
-            <li>Provost Scholar Award / Carleton University<br>June 2016</li>
+            <li><strong>Dashboard View</strong> displays all the leads and their current status. Leads can be created and sorted by company, upcoming deadlines or application status.</li>
+            <li><strong>Detail View</strong> shows all the information specific to a lead, including company profiles, job location, and upcoming action items such as interview dates and application deadlines. From the detailed view, users are also able to edit, and delete leads, and update their lead status with new tasks, such as sending a follow up email, or scheduling an interview date.</li>
           </ul>
         </div>
+
+        <figure class="full-span">
+          <img class="project-img" src="images/getwork/getwork-07.png" alt="getwork app dashboard view">
+          <figcaption class="caption">App Screenshot: The dashboard view displays all the leads and their current status.</figcaption>
+        </figure>
+
+        <img class="left project-img" src="images/getwork/getwork-09.png" alt="visual design">
+
+        <div class="right">
+          <h2>Visual Design</h2>
+          <p>The app adopts a minimal, information focused layout with hard edges and clean type. Colour were used spairingly and only to draw attention to clickable elements and key information.</p>
+        </div>
+
+        <figure class="full-span">
+          <img class="project-img" src="images/getwork/getwork-08.png" alt="getwork app lead and edit views">
+          <figcaption class="caption">App Screenshots Left to Right: Detail View / Add New Lead</figcaption>
+        </figure>
+
+        <div class="left">
+          <h3><img class="intext" src="images/xicon.png" alt="x marks the spot"><a href="">Check out the code on Github</a></h3>
+          <h3><img class="intext" src="images/xicon.png" alt="x marks the spot"><a href="#">Back to Top</a></h3>
+        </div>
+      </div>
     </div>
 
-    <footer>
-      <img class="bullet" src="images/xicon.png" alt="x marks the spot">
-      <h1 class="title">Contact</h1>
+    <div class="block project">
+      <div class="container">
 
-      <div class="container flex">
+        <div class="full-span">
+          <h1 class="project-title">TreeTrip<span class="not-bold"> is a CO<sub>2</sub>e calculator that helps people understand the environmental impacts of their travel.</h1>
+          <h3><img class="intext" src="images/xicon.png" alt="x marks the spot"><a href="">Check out the code on Github</a></h3>
+          <h3><img class="intext" src="images/xicon.png" alt="x marks the spot"><a href="https://treetrip-co2e.herokuapp.com
+">Try the demo on Heroku</a></h3>
+        </div>
+
+        <img class="full-span project-img" src="images/treetrip/treetrip-01.png" alt="treetrip landing page">
+
+        <div class="left">
+          <h2>Group Project at Codeclan</h2>
+          <p><strong>Team:</strong> Miriam Boran, Alasdair Carstairs</p>
+          <p><strong>Role:</strong> Product Designer (UX Design, Overall design language), Developer (form logic)</p>
+          <p><strong>Brief:</strong> Create a carbon footprint calculator in a one week sprint.</p>
+          <p><strong>Technologies:</strong> NodeJS, Webpack, Express, MongoDB, Nodemon, HTML and CSS</p>
+          <p><strong>Timeline:</strong> May 2019</p>
+        </div>
+
+        <h1 class="full-span not-bold">Having reviewed several <a href="https://footprint.wwf.org.uk">existing carbon footprint calculators</a>, we discovered that transportation was our largest source of carbon impact, and indeed is the largest source of carbon impact for most individuals in the UK.
+        <br>
+        <br>We decided to create a simple calculator based off the UK government <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">carbon emissions conversion factors</a> where users can determine the carbon footprint of their travel based on an short questionaire.</h1>
+
+        <figure class="full-span">
+          <img class="project-img" src="images/treetrip/treetrip-02.png" alt="wireframe sketches">
+          <figcaption class="caption">Early wireframes and brainstorming</figcaption>
+        </figure>
+
+        <figure class="full-span">
+          <img class="project-img" src="images/treetrip/treetrip-03.png" alt="wireframe sketches">
+          <figcaption class="caption">Form Logic Diagram</figcaption>
+        </figure>
+
+        <div class="left">
+          <h2>UX Challenges</h2>
+          <p>The biggest challenge of the project was creating an intuitive user experience for the complex branching structure of the form. We wanted it to be dynamically generated, so that the app could be updated with new transportation methods (such as space travel) over time.<br><br>
+          This proved to be doubly challenging because the UK government resource for carbon emission factors of different transportation methods was an excell spreadsheet. To ensure our calculator worked seamlessly, we had to build our own API using MongoDB.</p>
+        </div>
+
+        <div class="left">
+          <h3><img class="intext" src="images/xicon.png" alt="x marks the spot"><a href="">Check out the code on Github</a></h3>
+          <h3><img class="intext" src="images/xicon.png" alt="x marks the spot"><a href="https://treetrip-co2e.herokuapp.com
+">Try the demo on Heroku</a></h3>
+        </div>
+      </div>
+    </div>
+
+    <footer class="block">
+      <h1 class="title">Get in Touch</h1>
+      <div class="split">
         <div>
           <h3>Eric Cross</h3>
-          <p>Seeking new opportunities<br>in user experience design</p>
-        </div>
-        <div>
-          <h3>Email</h3>
-          <p><a href="mailto: eric.cross@sympatico.ca">me@ericxcross.com</a></p>
+          <p><a href="mailto: eric.cross@sympatico.ca">eric.cross@sympatico.ca</a></p>
         </div>
         <div>
           <h3>Social Media</h3>
           <p><a href="https://www.linkedin.com/in/ericxcross/">LinkedIn</a> / <a href="https://www.instagram.com/ericxcross/?hl=en">Instagram</a> / <a href="https://github.com/ericxcross">GitHub</a></p>
         </div>
       </div>
-      <p id="copyright">&#160 Copyright 2019 Eric Cross / this website is designed by me and hosted with GitHub pages / font credits: Noto Sans</p>
+      <p id="copyright">Website set in Noto Sans and served by Google Fonts. All other content on this site is produced and &copy; Copyright 2019 by Eric Cross / Website hosted with GitHub pages</p>
     </footer>
 
   </body>
 </html>
+
+
+
+
+<!-- <h3>GET IN TOUCH:  <span class="not-bold"><a href="mailto: eric.cross@sympatico.ca">Email</a> / <a href="https://www.linkedin.com/in/ericxcross/">LinkedIn</a> / <a href="https://www.instagram.com/ericxcross/?hl=en">Instagram</a> / <a href="https://github.com/ericxcross">GitHub</a></span></h3> -->
+<!--
+<div class="right">
+  <h3>Professional Experience</h3>
+  <ul>
+    <li>Freelance Designer<br>Self-Employed / Currently Edinburgh, UK<br>Feb 15-Ongoing</li>
+    <li>Product Designer<br><a href="http://www.ito-design.com/">ITO Design</a> / Cham, Switzerland<br>June 16-Sept 18</li>
+    <li>Product Design Intern<br><a href="https://www.otilumionics.com/">OTI Lumionics</a> / Toronto, Canada<br>May 15-Aug 15</li>
+    <li>Experience Design Intern<br><a href="http://blueskydesigngroup.com.au/">Blue Sky Design Group</a> / Sydney, Australia<br>June 14-Dec 14</li>
+  </ul>
+  <h3>Education</h3>
+  <ul>
+    <li>SQA Level 8 in Software Development<br><a href="https://codeclan.com/">CodeClan</a> / Edinburgh, UK<br>Feb 19-Ongoing</li>
+    <li>Bachelors of Industrial Design<br><a href="https://carleton.ca/id/bid/">Carleton University</a> / Ottawa, Canada<br>Sept 11-June 16</li>
+    <li>Academic Exchange<br><a href="https://www.monash.edu/study/courses/majors-minors-specialisations/2019/specialisations/industrial-design-xs0128">Monash University</a> / Melbourne, Australia<br>Feb 14-June 14</li>
+  </ul>
+  <h3>Awards</h3>
+  <ul>
+    <li>Red Dot Design / Qua Chair / ITO Design<br>Sept 2019</li>
+    <li>Provost Scholar Award / Carleton University<br>June 2016</li>
+  </ul>
+</div> -->
