@@ -72,7 +72,7 @@ a:hover, a:hover .underline {
 
 body{
   display: grid;
-  grid-template-columns: minmax(36px, 1fr) minmax(auto, 8fr) minmax(36px, 1fr);
+  grid-template-columns: minmax(36px, 1fr) minmax(auto, 1080px) minmax(36px, 1fr);
   background: white;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
 }
