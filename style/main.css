@@ -1,6 +1,6 @@
 html{
   background: linear-gradient(#1824bf, #1824bf);
-  padding: 0.5em;
+  padding: 8px;
   min-height: 100vh;
   transition: opacity 2s ease-in;
   scroll-behavior: smooth;
@@ -27,6 +27,7 @@ h3{
   font-weight: 700;
   font-size: 1em;
   margin: 0.5em 0;
+  line-height: 1.8em;
 }
 
 p, li, figcaption{
@@ -71,7 +72,7 @@ a:hover, a:hover .underline {
 
 body{
   display: grid;
-  grid-template-columns: minmax(3em, 1fr) minmax(auto, 1080px) minmax(3em, 1fr);
+  grid-template-columns: minmax(36px, 1fr) minmax(auto, 1080px) minmax(36px, 1fr);
   background: white;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
 }
@@ -97,7 +98,7 @@ header{
 }
 
 #nav{
-  margin: 3em 0 25vh 0;
+  margin: 36px 0 25vh 0;
 }
 
 .split {
@@ -213,16 +214,49 @@ footer{
   margin: 2em 0;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 780px) {
   html{
-    font-size: 0.8em;
+    font-size: 1em;
+    padding: 4px;
   }
+
+  #nav{
+    margin-top: 21px;
+  }
+
+  h1{
+    font-size: 1.8em;
+  }
+
+  h2{
+    font-size: 1.4em;
+  }
+
+
+  body{
+    grid-template-columns: minmax(28px, 1fr) minmax(auto, 1080px) minmax(28px, 1fr);
+  }
+
   .container, .cv-container{
     display: block;
   }
 
   footer .split {
     display: block;
+  }
+
+  footer .split div {
+    margin-top: 3em;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  html{
+    font-size: 0.9em;
+  }
+
+  body{
+    grid-template-columns: minmax(21px, 1fr) minmax(auto, 1080px) minmax(21px, 1fr);
   }
 
   footer .split div {
