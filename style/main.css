@@ -72,7 +72,7 @@ a:hover, a:hover .underline {
 
 body{
   display: grid;
-  grid-template-columns: minmax(36px, 1fr) minmax(auto, 1080px) minmax(36px, 1fr);
+  grid-template-columns: minmax(36px, 1fr) minmax(auto, 8fr) minmax(36px, 1fr);
   background: white;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
 }
@@ -88,7 +88,7 @@ header{
 .scroll{
   display: block;
   text-align: center;
-  margin-top: -3em;
+  margin-top: -3.5em;
   color: #1824bf;
 }
 
@@ -186,7 +186,7 @@ header{
 }
 
 .project-list{
-  margin-bottom: 6em;
+  margin-bottom: 4em;
 }
 
 .project-img{
@@ -212,6 +212,12 @@ header{
 
 footer{
   margin: 2em 0;
+}
+
+@media screen and (min-width: 1800){
+  html{
+    font-size: 2em;
+  }
 }
 
 @media screen and (max-width: 780px) {
