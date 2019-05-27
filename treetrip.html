@@ -21,28 +21,30 @@
       </div>
 
       <div>
-        <h1 class="project-title">TreeTrip<span class="not-bold"> is a CO<sub>2</sub>e calculator that helps people understand the environmental impacts of their travel.</h1>
-        <h3><br><img class="intext" src="images/xicon.png" alt="x marks the spot"><a target="_blank" href="https://treetrip-co2e.herokuapp.com">Demo the Application</a></h3>
+        <h1 class="project-title">TreeTrip<span class="not-bold"> is a CO<sub>2</sub>e calculator that helps people understand the environmental impacts of their travel. Try it on <a target="_blank" href="https://treetrip-co2e.herokuapp.com">Heroku.</a></span></h1>
       </div>
     </header>
 
 
     <div class="block project">
         <div class="container">
-        <img class="full-span project-img" src="images/treetrip/treetrip-01.png" alt="treetrip landing page">
 
-        <div class="left">
-          <h2>Group Project at Codeclan</h2>
-          <p><strong>Project:</strong> Single Page JS Web Application</p>
+          <figure class="full-span">
+            <img class="project-img" src="images/treetrip/treetrip-01.png" alt="treetrip landing page">
+          </figure>
+
+        <div class="left summary">
+          <p><strong>Project:</strong> TreeTrip</p>
           <p><strong>Team:</strong> Miriam Boran, Alasdair Carstairs</p>
-          <p><strong>Role:</strong> Digital Product Design (Overall Design Langaguage and CSS) / NodeJS Development(form logic)</p>
-          <p><strong>Technologies:</strong> NodeJS, Webpack, Express, MongoDB, Nodemon, HTML and CSS</p>
-          <p><strong>Timeline:</strong> One week sprint in May 2019</p>
+          <p><strong>Role:</strong> Digital Product Design / Front End Development</p>
+          <p><strong>Technologies:</strong> NodeJS, Webpack, HTML and CSS</p>
+          <p><strong>Timeline:</strong> One week in May 2019</p>
+          <p><strong>Context:</strong> Treetrip was a one week group project at Codeclan to develop a carbon footprint calculator web application in NodeJS.</p>
         </div>
 
-        <h1 class="full-span not-bold">Having reviewed several existing carbon footprint calculators, we discovered that transportation was our largest source of carbon impact, and indeed is the largest source of carbon impact for most individuals in the UK.
+        <h2 class="full-span not-bold">Having reviewed several existing carbon footprint calculators, we discovered that transportation was our largest source of carbon impact, and indeed is the largest source of carbon impact for most individuals in the UK.
         <br>
-        <br>We decided to create a simple calculator based on the UK government <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">carbon emissions conversion factors</a> where users can determine the carbon footprint of their travel based on an short questionaire.</h1>
+        <br>We decided to create a simple calculator based on the UK government <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting">carbon emissions conversion factors</a> where users can determine the carbon footprint of their travel based on an short questionaire.</h2>
 
         <figure class="full-span">
           <img class="project-img" src="images/treetrip/treetrip-02.png" alt="wireframe sketches">
@@ -57,27 +59,30 @@
         <div class="left">
           <h2>UX Challenges</h2>
           <p>The biggest challenge of the project was creating an intuitive user experience for the complex branching structure of the form. We wanted it to be dynamically generated, so that the app could be updated with new transportation methods (such as space travel) over time.<br><br>
-          This proved to be doubly challenging because the UK government resource for carbon emission factors of different transportation methods was an excell spreadsheet. To ensure our calculator worked seamlessly, we had to build our own API using MongoDB.</p>
+          This proved to be doubly difficult because the UK government resource for carbon emission factors of different transportation methods was an excel spreadsheet. To ensure our form worked seamlessly, we had to build our own API in a structured logic tree using MongoDB.</p>
         </div>
 
         <figure class="full-span">
           <img class="project-img" src="images/treetrip/treetrip-04.png" alt="form flow">
-          <figcaption class="caption">Form Wireframes: By presenting each question individually to the user on a full-width page, the complexity of the dynamically generated decision tree was hidden inside a simple, linear series of inputs.
-          </figcaption>
-        </figure>
-
-        <figure class="full-span">
-          <img class="project-img" src="images/treetrip/treetrip-05.png" alt="form flow">
-          <figcaption class="caption">Results View: Emissions are displayed using three separate models: CO<sub>2</sub>e, Trees required and Social Cost. These metrics provides the user with a powerful visualisation of the scale of their carbon impact. Users are also presented with a chart compairing their mode of transport against alternative travel options.</figcaption>
+          <figcaption class="caption">Form views for the carbon footprint calculation of a local bus</figcaption>
         </figure>
 
         <div class="left">
-          <h3><img class="intext" src="images/xicon.png" alt="x marks the spot">
-            <a target="_blank" href="https://treetrip-co2e.herokuapp.com">Demo the application on Heroku</a></h3>
-          <h3><img class="intext" src="images/xicon.png" alt="x marks the spot"><a target="_blank" href="https://github.com/ericxcross/treetrip">Check out the code on Github</a></h3>
+          <h2>UX Solutions</h2>
+          <p>By presenting each question individually on a full-width page, the complexity of the decision tree was hidden inside a simple, linear series of inputs. Once the user enters their information, they receive a colourful display of the scale of their carbon impact using three separate metrics - CO<sub>2</sub>e, trees required and social cost.<br><br>While the social cost and CO<sub>2</sub>e metrics are fairly standard across most carbon footprint calculators, the trees metric, derived from the average number of trees required to offset the user's travel, provides the user with a powerful visualization of their carbon footprint. Users are also presented with a chart compairing their mode of transport against the number of trees required for alternative travel options.</p>
         </div>
 
-        <h3 class="left"><img class="intext" src="images/xicon.png" alt="x marks the spot"><a href="index.html#projects">Back to Projects</a></h3>
+        <figure class="full-span">
+          <img class="project-img" src="images/treetrip/treetrip-05.png" alt="form flow">
+          <figcaption class="caption">Results View: CO<sub>2</sub>e, Trees required and Social Cost.</figcaption>
+        </figure>
+
+        <div class="left">
+          <h3>- <a target="_blank" href="https://treetrip-co2e.herokuapp.com">Demo the application on Heroku</a></h3>
+          <h3>- <a target="_blank" href="https://github.com/ericxcross/treetrip">Check out the code on Github</a></h3>
+        </div>
+
+        <h3 class="left">- <a href="index.html#projects">Back to Projects</a></h3>
 
       </div>
     </div>
