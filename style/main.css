@@ -1,10 +1,10 @@
 html{
   background-color: white;
-  padding: 8px;
   min-height: 100vh;
   transition: opacity 2s ease-in;
   scroll-behavior: smooth;
   font-size: 1em;
+  margin: 0 !important;
 }
 
 h1{
@@ -95,7 +95,6 @@ a:hover, a:hover .underline {
 body{
   display: grid;
   grid-template-columns: minmax(36px, 1fr) minmax(auto, 1080px) minmax(36px, 1fr);
-  /* box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1); */
 }
 
 header{
@@ -176,7 +175,7 @@ header{
 
 .back-to{
   text-transform: uppercase;
-  text-align: right;
+  text-align: left;
 }
 
 .caption{
@@ -236,7 +235,6 @@ footer{
 @media screen and (max-width: 780px) {
   html{
     font-size: 1em;
-    padding: 4px;
   }
 
   #nav{
@@ -250,7 +248,6 @@ footer{
   h2{
     font-size: 1.4em;
   }
-
 
   body{
     grid-template-columns: minmax(28px, 1fr) minmax(auto, 1080px) minmax(28px, 1fr);
