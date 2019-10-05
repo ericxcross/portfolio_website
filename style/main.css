@@ -1,5 +1,5 @@
 html{
-  background-color: white;
+  background-color: #FAFAFA;
   min-height: 100vh;
   transition: opacity 2s ease-in;
   scroll-behavior: smooth;
@@ -10,10 +10,9 @@ html{
 h1{
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
-  font-size: 2.8em;
+  font-size: 2em;
   color: #184ebf;
   margin: 0.5em 0 0.1em 0;
-
 }
 
 h2{
@@ -57,7 +56,7 @@ a, .underline {
   text-decoration: none;
   cursor: pointer;
   border-bottom: 3px solid #184ebf;
-  transition: opacity 0.3s ease-in-out;
+  transition: border-bottom 0.1s ease-in-out;
 }
 
 a:hover, a:hover .underline {
@@ -65,26 +64,14 @@ a:hover, a:hover .underline {
   transition: border-bottom 0.1s ease-in-out;
 }
 
-.scroll{
-  display: block;
-  text-align: center;
-  margin-top: -3.5em;
-  color: #184ebf;
-}
-
 .no-underline, .no-underline:hover{
   border: 0;
 }
 
 .not-bold{
-  font-weight: 400;
+  font-weight: 600;
   text-transform: none;
   color: black;
-}
-
-.scroll:hover{
-  opacity: 0.8;
-  transition: opacity 0.1s ease-in-out;
 }
 
 .summary{
@@ -94,7 +81,7 @@ a:hover, a:hover .underline {
 
 body{
   display: grid;
-  grid-template-columns: minmax(36px, 1fr) minmax(auto, 1080px) minmax(36px, 1fr);
+  grid-template-columns: minmax(36px, 1fr) minmax(auto, 960px) minmax(36px, 1fr);
 }
 
 header{
@@ -125,11 +112,13 @@ header{
 }
 #logo img{
   height: 100%;
+  filter: grayscale(1);
+  transition: filter 0.1s ease-in-out;
 }
 
-#logo:hover{
-  opacity: 0.7;
-  transition: opacity 0.1s ease-in-out;
+#logo img:hover{
+  filter: grayscale(0);
+  transition: filter 0.1s ease-in-out;
 }
 
 #navbar{
@@ -264,6 +253,15 @@ footer{
   footer .split div {
     margin-top: 3em;
   }
+}
+
+.fade {
+    opacity: 1;
+    transition: 3s opacity;
+}
+.fade.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 @media screen and (max-width: 540px) {
