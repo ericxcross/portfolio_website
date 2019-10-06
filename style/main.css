@@ -12,12 +12,12 @@ h1{
   font-weight: 700;
   font-size: 2em;
   color: black;
-  margin: 0.5em 0 0.1em 0;
+  padding: 0.5em 0 0.5em 0;
 }
 
 .blue{
   text-transform: none;
-  color: #184ebf;
+  color: blue;
 }
 
 h2{
@@ -59,14 +59,9 @@ ul{
 }
 
 a{
-  color: inherit;
+  color: black;
   text-decoration: none;
   cursor: pointer;
-}
-
-
-
-.underline {
   text-decoration: none;
   display: inline-block;
 }
@@ -76,29 +71,44 @@ a{
     display: block;
     width: 0;
     height: 4px;
-    background: #184ebf;
+    background: blue;
     transition: width .3s;
+    margin-bottom: -4px;
 }
 
-a:hover .underline::after {
+.underline:hover::after {
     width: 100%;
     transition: width .3s;
 }
 
-
-
 body{
   display: grid;
-  grid-template-columns: minmax(36px, 1fr) minmax(auto, 1008px) minmax(36px, 1fr);
+  grid-template-columns: minmax(36px, 1fr) minmax(auto, 1080px) minmax(36px, 1fr);
 }
 
 header{
   grid-column: 2 / span 1;
-  min-height: 60vh;
+}
+
+#info, #about{
+  position: relative;
+  padding: 250px 0 5em 0;
 }
 
 #nav{
-  margin: 36px 0 20vh 0;
+  padding: 1em 0;
+  position: fixed;
+  max-width: 1440px;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+}
+
+#nav * {
+  padding: 0 1em;
+  display: inline-block;
 }
 
 .split {
@@ -116,25 +126,11 @@ header{
   height: 4em;
   width: auto;
   padding-right: 2em;
-  border: none;
 }
 
 #logo:hover{
   filter: grayscale(0);
   transition: filter 0.1s ease-in-out;
-}
-
-.fade-in{
-  opacity: 0;
-  -webkit-transition: opacity 0.1s ease-in-out;
-  -moz-transition: opacity 0.1s ease-in-out;
-  -ms-transition: opacity 0.1s ease-in-out;
-  -o-transition: opacity 0.1s ease-in-out;
-  transition: opacity 0.1s ease-in-out;
-}
-
-.load{
-  opacity: 1;
 }
 
 .intext{
@@ -145,21 +141,51 @@ header{
 
 .content {
   grid-column: 2/span 1;
+  width: 100%;
+  overflow: visible;
 }
 
 .project{
-  margin: 6em 0;
+  margin: 24px 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: visible;
 }
+
+/* .project::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  position: absolute;
+  background: blue;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+.project:hover::before{
+  background: blue;
+  opacity: 0.8;
+  transition: all .3s ease-in-out;
+} */
 
 .project img{
-  width: 100%;
-  margin-bottom: 0.5em;
+  transition: all .3s ease;
 }
 
-.back-to{
-  text-transform: uppercase;
-  text-align: left;
+.project img:hover{
+  transform: scale(1.01);
+  box-shadow: 0px 5px 30px -5px #E5E5E5;
 }
+
+.halfwidth{
+  max-width: 50%;
+  padding-bottom: 2em;
+}
+
 
 .caption{
   margin-top: 0;
@@ -248,15 +274,6 @@ footer{
   footer .split div {
     margin-top: 3em;
   }
-}
-
-.fade {
-    opacity: 1;
-    transition: 3s opacity;
-}
-.fade.fade-out {
-    opacity: 0;
-    transition: none;
 }
 
 @media screen and (max-width: 540px) {
