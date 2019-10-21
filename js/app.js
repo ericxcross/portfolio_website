@@ -20,5 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 window.onload = function(){
-  document.querySelector(".fade-out").classList.remove("fade-out");
+  const fader = document.querySelector(".fade-out")
+  if (fader !== null){
+    fader.classList.remove("fade-out");
+  }
 }
