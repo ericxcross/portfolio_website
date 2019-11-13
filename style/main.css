@@ -76,19 +76,32 @@ a{
   display: inline-block;
 }
 
-.underline::after {
+.score::after {
     content: '';
     display: block;
     width: 0;
-    height: 4px;
+    height: 0.3em;
     background: #4bffa5;
     transition: width .3s;
-    margin-bottom: -4px;
+    margin-bottom: -0.3em;
 }
 
-.underline:hover::after {
+.score:hover::after {
     width: 100%;
     transition: width .3s;
+}
+
+.underline {
+  background-image: linear-gradient(90deg, #4bffa5, #4bffa5);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 78%;
+  transition: background-size 0.3s ease-out;
+}
+
+.underline:hover{
+  background-size: 100% 88%;
+  transition: background-size 0.3s ease-in;
 }
 
 body{
@@ -119,7 +132,7 @@ header{
 }
 
 #nav * {
-  padding: 0 1em;
+  margin: 0 1em;
   display: inline-block;
 }
 
@@ -133,16 +146,16 @@ header{
 
 #logo{
   height: 100%;
-  filter: brightness(0%);
-  transition: filter 0.2s ease-in-out;
+  filter: brightness(100%);
+  transition: filter 0.1s;
   height: 4em;
   width: auto;
   padding-right: 2em;
 }
 
 #logo:hover{
-  filter: brightness(100%);
-  transition: filter 0.2s ease-in-out;
+  filter: brightness(20%);
+  transition: filter 0.1s;
 }
 
 .intext{
