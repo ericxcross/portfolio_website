@@ -91,6 +91,7 @@ a{
   background-size: 100% 0.4em;
   background-position: 0 78%;
   transition: background-size 0.3s ease-out;
+  font-weight: bold;
 }
 
 .underline:hover{
