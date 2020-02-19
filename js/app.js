@@ -1,3 +1,5 @@
+var slideIndex = 1;
+
 document.addEventListener('DOMContentLoaded', () => {
   const headerText = document.querySelector('#info');
   let opacity = 1
@@ -17,11 +19,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
   }
+
+  showDivs(slideIndex);
+
 })
 
-window.onload = function(){
-  const fader = document.querySelector(".fade-out")
-  if (fader !== null){
-    fader.classList.remove("fade-out");
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
   }
+  x[slideIndex-1].style.display = "block";
 }
