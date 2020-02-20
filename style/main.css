@@ -91,7 +91,6 @@ a{
   background-size: 100% 0.4em;
   background-position: 0 78%;
   transition: background-size 0.3s ease-out;
-  font-weight: bold;
 }
 
 .underline:hover{
@@ -101,7 +100,7 @@ a{
 
 body{
   display: grid;
-  grid-template-columns: minmax(36px, 1fr) minmax(auto, 1080px) minmax(36px, 1fr);
+  grid-template-columns: minmax(36px, 1fr) minmax(auto, 1200px) minmax(36px, 1fr);
   margin: 0;
   padding: 0;
 }
@@ -112,7 +111,7 @@ header{
 
 #info, #about{
   position: relative;
-  padding: 250px 0 5em 0;
+  padding: 200px 0 5em 0;
 }
 
 #nav{
@@ -143,7 +142,7 @@ header{
   height: 100%;
   filter: brightness(100%);
   transition: filter 0.1s;
-  height: 4em;
+  height: 3em;
   width: auto;
   padding-right: 2em;
 }
