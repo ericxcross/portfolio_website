@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (headerText !== null){
     window.onscroll = function() {
 
-      opacity = window.pageYOffset - 100
+      opacity = (window.pageYOffset*0.4) - 50
 
       if (opacity <= 0) {
         headerText.style.opacity = '1';
-        headerText.style.display = 'block'
+        headerText.style.display = 'inline'
       } else if (opacity > 0 && opacity <= 100){
         headerText.style.opacity = 1 - (opacity/100);
       } else {
