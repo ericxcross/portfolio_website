@@ -6,106 +6,101 @@
     <meta name="author" content="Eric Cross">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/main.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="style/slider.css"/>
+    <link href="https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <script src="js/app.js"></script>
     <title>Eric Cross / Verus Plastic Backrest</title>
   </head>
 
   <body>
-
-    <nav id="nav" class="split">
-      <a class="no-underline" href="index.html"><img src="images/xicon.png" alt="x marks the spot" id="logo"></a>
-      <nav>
-        <h3><a href="index.html" class="underline">Projects</a></h3>
-        <h3><a href="about.html" class="underline">Info</a></h3>
-      </nav>
-    </nav>
-
-    <header id="info" class="fade">
-      <div class="description">
-        <div class="description-left">
-          <h1>Ellie Pro Chair Family</h1>
-          <h4><strong>Client: </strong>ITO Design for Profim (Flokk Group)</h4>
-          <h4><strong>Involvement: </strong>Designer at ITO Design</h4>
-          <h4><strong>Launch: </strong>November 2018</h4>
-          <h4><br></h4>
+    <header id="navbar">
+      <div class="navbar">
+        <div class="navbar-info">
+          <h1><a class="underline" href="index.html">Eric Cross</a></h1>
         </div>
-        <div class="description-right">
+        <div class="nav-button">
+          <div class="nav-toggle">
+            <div class="nav-toggle-bar"></div>
+          </div>
+        </div>
+        <nav class="navbar-links">
+          <ul>
+            <li><a href="index.html" class="black">Projects</a></li>
+            <li><a href="about.html" class="black">About</a></li>
+            <li><a href="mailto: ericcross121@gmail.com" class="black">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="splash-photo">
+    </div>
+
+    <div class="content">
+      <div class="section-grid">
+        <div class="section-left">
+          <h2>Ellie Chair Family</h2>
+          <p>ITO Design for Profim, 2018</p>
+          <p>Industrial design
+            <br>Colour, material, finish
+            <br>Design for manufacture
+          </p>
+        </div>
+        <div class="section-right">
           <p>Ellie is a chair family that responds to the merging traditions of home and office with a soft and inviting character. To meet EN1335 ergonomic standards, we concealed a synchro tilt mechanism under the seat with upholstery, enabling a calm simplicity to the aesthetic rarely seen in ergonomic work chairs.</p>
           <p>Four unique base designs and two backrest heights allow these chairs to be placed and enjoyed across a wide range of environments.</p>
         </div>
       </div>
-    </header>
 
+      <img src="images/ellie/ellie_1.jpg" class="horizontal-image" alt="">
+      <img src="images/ellie/ellie_2.jpg" class="horizontal-image" alt="">
+      <img src="images/ellie/ellie_3.jpg" class="horizontal-image" alt="">
 
-    <div class="content">
-      <figure class="project">
-        <img src="images/ellie/ellie_1.jpg" alt="">
-        <figcaption></figcaption>
-      </figure>
-      <figure class="project">
-        <img src="images/ellie/ellie_2.jpg" alt="">
-        <figcaption></figcaption>
-      </figure>
-      <figure class="project">
-        <img src="images/ellie/ellie_3.jpg" alt="">
-        <figcaption></figcaption>
-      </figure>
+      <div class="slider" id="slider">
 
-      <figure class="project">
-        <div class="button-overlay">
-          <div class="leftclick button" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="rightclick button" onclick="plusDivs(1)">&#10095;</div>
-        </div>
-        <img class="mySlides" src="images/ellie/ellie_5.jpg">
-        <img class="mySlides" src="images/ellie/ellie_6.jpg">
-        <img class="mySlides" src="images/ellie/ellie_8.jpg">
-        <img class="mySlides" src="images/ellie/ellie_9.jpg">
-        <img class="mySlides" src="images/ellie/ellie_10.jpg">
-        <img class="mySlides" src="images/ellie/ellie_11.jpg">
-        <figcaption>Research and development of the Ellie chair and starbases</figcaption>
-      </figure>
+          <div class="slider-item">
+            <img src="images/ellie/ellie_4.jpg" alt="">
+          </div>
 
-      <figure class="project">
-        <img src="images/ellie/ellie_12.jpg" alt="">
-      </figure>
+          <div class="slider-item">
+            <img src="images/ellie/ellie_45.jpg" alt="">
+          </div>
+
+          <div class="slider-item">
+            <img src="images/ellie/ellie_4.jpg" alt="">
+          </div>
+
+          <div class="slider-item">
+            <img src="images/ellie/ellie_4.jpg" alt="">
+          </div>
+
+          <div class="prev">
+              <h3>&#8592;</h3>
+          </div>
+          <div class="next">
+              <h3>&#8594;</h3>
+          </div>
+
+          <span class="switch">
+          </span>
+      </div>
 
       <h3>
-        <a class="underline" href="index.html">BACK TO PROJECTS</a> &#8594;
+        <a class="underline" href="index.html">&#8592; Back to projects</a>
       </h3>
-
     </div>
 
 
 
-    <footer>
-      <div class="footer-content container">
-        <div class="left">
-          <h3>Capabilities</h3>
-          <h4>Design Research</h4>
-          <h4>Product Development</h4>
-          <h4>Computational Modelling</h4>
-          <h4>Usability Testing</h4>
-        </div>
-        <div class="middle">
-          <h3>Software Skills</h3>
-          <h4>Solidworks / Rhino / Powersurfacing</h4>
-          <h4>Grasshopper / Python</h4>
-          <h4>Adobe Suite</h4>
-          <h4>Keyshot</h4>
-        </div>
-        <div class="right">
-          <h3>Contact</h3>
-          <h4><a href="mailto: ericcross121@gmail.com" class="underline">ericcross121@gmail.com</a></h4>
-          <h4><a href="https://www.instagram.com/ericxcross/?hl=en" target="_blank" class="underline">Instagram</a></h4>
-          <h4><a href="https://www.linkedin.com/in/ericxcross/" target="_blank" class="underline">LinkedIn</a></h4>
-        </div>
+    <footer class="footer-outer">
+      <div class="footer-inner">
+        <h2><a href="mailto: ericcross121@gmail.com" class="black">Email</a></h2>
+        <h2><a href="https://www.linkedin.com/in/ericxcross/" target="_blank" class="black">Linkedin</a></h2>
+        <h2><a href="https://www.instagram.com/ericxcross/?hl=en" target="_blank" class="black">Instagram</a></h2>
       </div>
-      <div id="copyright">
-        <p>This website was built independently by me and is open source on <a class="underline" href="https://github.com/ericxcross/portfolio_website" target="_blank">GitHub</a>  pages / Type set in Noto Sans served by <a class="underline" href="https://fonts.google.com/specimen/Noto+Sans" target="_blank">Google Fonts</a></p>
-      </div>
+      <p class="footer-bottom">&copy; Eric Cross 2020 / Website hosted on <a href="https://github.com/ericxcross/portfolio_website" class="black" target="_blank">GitHub</a>  pages / Type set in Circular Std served by <a href="https://www.onlinewebfonts.com/package/Circular_Std_Book" class="black" target="_blank">onlinewebfonts.com</a></p>
     </footer>
 
   </body>
-</html>
