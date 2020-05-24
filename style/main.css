@@ -25,14 +25,14 @@ h2{
 }
 
 h3{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0;
   padding-bottom: 1rem;
   line-height: 1.8rem;
 }
 
 h4, p, li, figcaption{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #666666;
   margin: 0;
   padding-bottom: 1rem;
@@ -58,7 +58,7 @@ body{
 .content{
   grid-column: 2;
   padding: 0;
-  margin-bottom: 98px;
+  margin-bottom: 108px;
 }
 
 .grid, .navbar{
@@ -78,13 +78,12 @@ body{
 
 .horizontal-image{
   width: 100%;
-  margin-bottom: 96px;
+  margin-bottom: 48px;
 }
 
 .section-grid{
   display: grid;
   grid-template-columns: 1fr 48px 1fr;
-  margin-bottom: 96px;
 }
 
 .section-left{
@@ -92,6 +91,7 @@ body{
   width: 100%;
   object-fit: cover;
   overflow: hidden;
+  margin-bottom: 48px;
 }
 
 .section-right{
@@ -99,6 +99,7 @@ body{
   width: 100%;
   object-fit: cover;
   overflow: hidden;
+  margin-bottom: 48px;
 }
 
 .project-image{
@@ -137,30 +138,8 @@ body{
   margin: 0 16px;
 }
 
-.tile-group{
-  margin-bottom: 2rem;
-  margin-left: -.5rem;
-  margin-right: -.5rem;
-}
-
-.tile{
-  display: inline-block;
-  padding: .5rem .8rem;
-  margin: .25rem;
-  background-color: #e0e0e0;
-  border-radius: .8rem;
-}
-
-.about-text{
-  margin: 0 0 180px 0;
-}
-
 .portrait{
   max-width: 560px;
-}
-
-.button:hover{
-  box-shadow: 0 5px 16px -3px #4bffa5;
 }
 
 ul, li{
@@ -174,21 +153,6 @@ a{
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-}
-
-.score::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0.3em;
-    background: #4bffa5;
-    transition: width .3s;
-    margin-bottom: -0.3em;
-}
-
-.score:hover::after {
-    width: 100%;
-    transition: width .3s;
 }
 
 .underline {
@@ -226,6 +190,6 @@ a.black:hover{
   }
 
   .project-text{
-    margin-top: 12px;
+    margin-top: 24px;
   }
 }

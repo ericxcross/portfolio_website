@@ -6,102 +6,104 @@
     <meta name="author" content="Eric Cross">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/main.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="style/slider.css"/>
+    <link href="https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <script src="js/app.js"></script>
-    <title>Eric Cross / Verus Plastic Backrest</title>
+    <title>Eric Cross / Qua Chair</title>
   </head>
 
   <body>
-
-    <nav id="nav" class="split">
-      <a class="no-underline" href="index.html"><img src="images/xicon.png" alt="x marks the spot" id="logo"></a>
-      <nav>
-        <h3><a href="index.html" class="underline">Projects</a></h3>
-        <h3><a href="about.html" class="underline">Info</a></h3>
-      </nav>
-    </nav>
-
-    <header id="info" class="fade">
-      <div class="description">
-        <div class="description-left">
-          <h1>Qua Multipurpose Chair</h1>
-          <h4><strong>Client: </strong>ITO Design for ITOKI</h4>
-          <h4><strong>Involvement: </strong>Designer at ITO Design</h4>
-          <h4><strong>Launch: </strong>December 2018</h4>
-          <h4><br></h4>
+    <header id="navbar">
+      <div class="navbar">
+        <div class="navbar-info">
+          <h1><a class="underline" href="index.html">Eric Cross</a></h1>
         </div>
-        <div class="description-right">
+        <div class="nav-button">
+          <div class="nav-toggle">
+            <div class="nav-toggle-bar"></div>
+          </div>
+        </div>
+        <nav class="navbar-links">
+          <ul>
+            <li><a href="index.html" class="black">Projects</a></li>
+            <li><a href="about.html" class="black">About</a></li>
+            <li><a href="mailto: ericcross121@gmail.com" class="black">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="splash-photo">
+    </div>
+
+    <div class="content">
+      <div class="section-grid">
+        <div class="section-left">
+          <h2>Qua Multipurpose Chair</h2>
+          <p>ITO Design for ITOKI, 2018</p>
+          <p>Industrial design
+            <br>Prototyping
+            <br>Grasshopper 3D
+          </p>
+        </div>
+        <div class="section-right">
           <p>Qua is a collaboration with ITOKI Japan to extend the Sequa product family with the addition of a lightweight multipurpose chair designed to suit new modes of work like hot-desking and collaboration. </p>
           <p>The flexible backrest uses variable wall thickness and an algorithmically generated hole pattern to create ‘living hinges’ that automatically adjust to the user's sitting position with limited adjustments required.</p>
         </div>
       </div>
-    </header>
 
+      <img src="images/qua/qua_1.jpg" class="horizontal-image" alt="">
+      <img src="images/qua/qua_2.jpg" class="horizontal-image" alt="">
+      <img src="images/qua/qua_3.jpg" class="horizontal-image" alt="">
+      <img src="images/qua/qua_6.jpg" class="horizontal-image" alt="">
 
-    <div class="content">
-      <figure class="project">
-        <img src="images/qua/qua_1.jpg" alt="">
-        <figcaption></figcaption>
-      </figure>
-      <figure class="project">
-        <img src="images/qua/qua_2.jpg" alt="">
-        <figcaption></figcaption>
-      </figure>
-
-      <figure class="project">
-        <div class="button-overlay">
-          <div class="leftclick button" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="rightclick button" onclick="plusDivs(1)">&#10095;</div>
+      <div class="slider" id="slider">
+        <div class="slider-item">
+          <img src="images/qua/qua_4.jpg" alt="">
         </div>
-        <img class="mySlides" src="images/qua/qua_3.jpg">
-        <img class="mySlides" src="images/qua/qua_4.jpg">
-        <img class="mySlides" src="images/qua/qua_5.jpg">
-        <img class="mySlides" src="images/qua/qua_6.jpg">
-        <img class="mySlides" src="images/qua/qua_7.jpg">
-        <img class="mySlides" src="images/qua/qua_8.jpg">
-        <figcaption>Research and development of the Qua chair</figcaption>
-      </figure>
 
-      <figure class="project">
-        <img src="images/qua/qua_9.jpg" alt="">
-      </figure>
+        <div class="slider-item">
+          <img src="images/qua/qua_5.jpg" alt="">
+        </div>
 
+        <div class="slider-item">
+          <img src="images/qua/qua_7.jpg" alt="">
+        </div>
+
+        <div class="slider-item">
+          <img src="images/qua/qua_8.jpg" alt="">
+        </div>
+
+        <div class="slider-item">
+          <img src="images/qua/qua_9.jpg" alt="">
+        </div>
+
+        <div class="prev">
+            <div><h4>&#8592;</h4></div>
+        </div>
+        <div class="next">
+            <div><h4>&#8594;</h4></div>
+        </div>
+
+        <span class="switch">
+        </span>
+      </div>
       <h3>
-        <a class="underline" href="index.html">BACK TO PROJECTS</a> &#8594;
+        <a class="underline" href="index.html">&#8592; Back to projects</a>
       </h3>
-
     </div>
 
 
 
-    <footer>
-      <div class="footer-content container">
-        <div class="left">
-          <h3>Capabilities</h3>
-          <h4>Design Research</h4>
-          <h4>Product Development</h4>
-          <h4>Computational Modelling</h4>
-          <h4>Usability Testing</h4>
-        </div>
-        <div class="middle">
-          <h3>Software Skills</h3>
-          <h4>Solidworks / Rhino / Powersurfacing</h4>
-          <h4>Grasshopper / Python</h4>
-          <h4>Adobe Suite</h4>
-          <h4>Keyshot</h4>
-        </div>
-        <div class="right">
-          <h3>Contact</h3>
-          <h4><a href="mailto: ericcross121@gmail.com" class="underline">ericcross121@gmail.com</a></h4>
-          <h4><a href="https://www.instagram.com/ericxcross/?hl=en" target="_blank" class="underline">Instagram</a></h4>
-          <h4><a href="https://www.linkedin.com/in/ericxcross/" target="_blank" class="underline">LinkedIn</a></h4>
-        </div>
+    <footer class="footer-outer">
+      <div class="footer-inner">
+        <h2><a href="mailto: ericcross121@gmail.com" class="black">Email</a></h2>
+        <h2><a href="https://www.linkedin.com/in/ericxcross/" target="_blank" class="black">Linkedin</a></h2>
+        <h2><a href="https://www.instagram.com/ericxcross/?hl=en" target="_blank" class="black">Instagram</a></h2>
       </div>
-      <div id="copyright">
-        <p>This website was built independently by me and is open source on <a class="underline" href="https://github.com/ericxcross/portfolio_website" target="_blank">GitHub</a>  pages / Type set in Noto Sans served by <a class="underline" href="https://fonts.google.com/specimen/Noto+Sans" target="_blank">Google Fonts</a></p>
-      </div>
+      <p class="footer-bottom">&copy; Eric Cross 2020 / Website hosted on <a href="https://github.com/ericxcross/portfolio_website" class="black" target="_blank">GitHub</a>  pages / Type set in Circular Std served by <a href="https://www.onlinewebfonts.com/package/Circular_Std_Book" class="black" target="_blank">onlinewebfonts.com</a></p>
     </footer>
 
   </body>
-</html>

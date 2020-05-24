@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (prevScroll > currentScroll) {
       document.getElementById("navbar").style.top = "0"
-    } else if (currentScroll > 180) {
+    } else if (currentScroll > 120) {
       document.getElementById("navbar").style.top = "-80px"
     }
 

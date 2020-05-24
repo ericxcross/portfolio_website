@@ -9,7 +9,7 @@ header{
   padding-top: 6px;
   background-color: rgba(256,256,256,0.8);
   backdrop-filter: blur(4px);
-  transition: top 0.3s;
+  transition: top 0.5s;
 }
 
 .navbar-links{
@@ -158,9 +158,7 @@ header{
 }
 
 @media screen and (max-width: 760px) {
-  html{
-    font-size: 12px;
-  }
+
 
   body, header{
     backdrop-filter: none;
