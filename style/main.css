@@ -71,7 +71,6 @@ body{
 
 .project-content{
   grid-column: 2;
-  max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -83,7 +82,7 @@ body{
 
 .section-grid{
   display: grid;
-  grid-template-columns: 1fr 48px 1fr;
+  grid-template-columns: 340px 48px 1fr;
 }
 
 .section-left{
@@ -136,10 +135,6 @@ body{
 
 .footer-inner h2 {
   margin: 0 16px;
-}
-
-.portrait{
-  max-width: 560px;
 }
 
 ul, li{
