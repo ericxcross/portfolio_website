@@ -81,8 +81,9 @@ body{
 }
 
 .section-grid{
+  padding: 12px 0 12px 0;
   display: grid;
-  grid-template-columns: 340px 48px 1fr;
+  grid-template-columns: 1fr 48px 2fr;
 }
 
 .section-left{
