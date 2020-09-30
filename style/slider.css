@@ -38,15 +38,11 @@
 
 .slider .next,.slider .prev{
   z-index:3;
-  margin: 0 12px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: 2.5rem;
-  width: 3rem;
-  border-radius: 1.5rem;
-  padding-top: 0.5rem;
-  background: #4bffa5;
+  height: 100%;
+  width: 50%;
   opacity: 1;
   text-align: center;
 }
@@ -55,9 +51,13 @@
   right:0;
 }
 
-.slider .next:hover,.slider .prev:hover{
-  cursor: pointer;
-  opacity: 0.6;
+.slider .next:hover{
+  cursor: url('../images/arrow_forward.png'), auto;
+  transition: 0.2s all;
+}
+
+.slider .prev:hover{
+  cursor: url('../images/arrow_back.png'), auto;
   transition: 0.2s all;
 }
 
