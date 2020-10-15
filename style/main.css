@@ -7,7 +7,7 @@ html{
   font-size: 16px;
   margin: 0;
   padding: 0;
-  font-family: "Circular Std Book", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 h1{
@@ -83,7 +83,7 @@ body{
 .section-grid{
   padding: 12px 0 12px 0;
   display: grid;
-  grid-template-columns: 1fr 48px 2fr;
+  grid-template-columns: 1fr 48px 1fr;
 }
 
 .section-left{

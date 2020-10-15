@@ -34,6 +34,7 @@ header{
 .navbar-links ul li {
   color: black;
   font-size: 1.3em;
+  font-weight: 500;
 }
 
 .nav-toggle{
