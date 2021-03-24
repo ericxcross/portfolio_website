@@ -19,13 +19,13 @@ h1{
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 1.7rem;
   padding-bottom: 1rem;
   margin: 0;
 }
 
 h3{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0;
   padding-bottom: 1rem;
   line-height: 1.8rem;
@@ -51,14 +51,14 @@ body{
 
 .splash-photo{
   grid-column: 1 / span 3;
-  height:240px;
+  height:168px;
   overflow: hidden;
 }
 
 .content{
   grid-column: 2;
   padding: 0;
-  margin-bottom: 108px;
+  margin-bottom: 24px;
 }
 
 .grid, .navbar{
@@ -135,7 +135,8 @@ body{
 }
 
 .footer-inner h2 {
-  margin: 0 16px;
+  margin: 0 0.8rem;
+  font-size: 1.7rem;
 }
 
 ul, li{
@@ -178,6 +179,16 @@ a.black:hover{
 }
 
 @media screen and (max-width: 1080px) {
+  html{
+    font-size: 14px;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.8rem;
+  }
+
   .grid, .section-grid{
     width: auto;
     height:auto;

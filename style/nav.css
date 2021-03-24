@@ -92,15 +92,15 @@ header{
 
   .navbar-links ul {
     list-style: none;
-    margin: 192px 48px;
-    width: auto;
-    display: flex;
-    flex-direction: column;
+    margin: 50% 0;
+    display: block;
+    text-align: center;
   }
 
   .navbar-links ul li{
-    font-size: 2.6rem;
+    font-size: 2rem;
     color: black;
+    margin-bottom: 3rem;
   }
 
   .nav-toggle {
